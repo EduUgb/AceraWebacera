@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acera Fighter – El Juego Salvadoreño</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-main">ACERA</span><span class="logo-accent">FIGHTER</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">INICIO</a></li>
+      <li><a href="#about" class="nav-link">NOSOTROS</a></li>
+      <li><a href="#trailer" class="nav-link">TRAILER</a></li>
+      <li><a href="#download" class="nav-link">DESCARGAR</a></li>
+      <li><a href="#reviews" class="nav-link">RESEÑAS</a></li>
+      <li><a href="#contact" class="nav-link">CONTACTO</a></li>
+      <li><a href="#donate" class="nav-link nav-cta">DONAR ♥</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🇸🇻 HECHO EN EL SALVADOR</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line1">ACERA</span>
+        <span class="hero-title-line2">FIGHTER</span>
+      </h1>
+      <p class="hero-subtitle">El primer juego de pelea callejera salvadoreño.<br>Las aceras de San Salvador se convierten en arena de combate.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">DESCARGAR GRATIS</a>
+        <a href="#trailer" class="btn btn-secondary">▶ VER TRAILER</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">Personajes</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">Escenarios</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Devs</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ABOUT + TEAM CAROUSEL ══════════════════ -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <div class="section-tag">— QUIÉNES SOMOS —</div>
+      <h2 class="section-title">Sobre <span class="accent">Acera Fighter</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">Acera Fighter nació en las calles virtuales de San Salvador, un juego de pelea 2D indie desarrollado con pasión por un equipo de jóvenes salvadoreños.</p>
+        <p>Inspirado en los clásicos del género pero con una identidad 100% centroamericana, cada personaje representa arquetipos de la cultura urbana salvadoreña. Desde el mercado central hasta el malecón, cada escenario es un homenaje a nuestra tierra.</p>
+        <div class="about-tags">
+          <span class="tag">Acción</span>
+          <span class="tag">Pelea 2D</span>
+          <span class="tag">Indie</span>
+          <span class="tag">Cultura SV</span>
+        </div>
+      </div>
+      <div class="about-image-mosaic">
+        <div class="mosaic-img mosaic-1"><div class="img-placeholder">🥊 SCREENSHOT 1</div></div>
+        <div class="mosaic-img mosaic-2"><div class="img-placeholder">⚡ SCREENSHOT 2</div></div>
+        <div class="mosaic-img mosaic-3"><div class="img-placeholder">🔥 SCREENSHOT 3</div></div>
+      </div>
+    </div>
+
+    <!-- TEAM CAROUSEL -->
+    <div class="team-section">
+      <div class="section-tag">— EL EQUIPO —</div>
+      <h3 class="team-title">Los <span class="accent">Desarrolladores</span></h3>
+      <p class="team-subtitle">Pasa el cursor sobre cada tarjeta para conocer al equipo</p>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="prevBtn">‹</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="dev-card">
+              <div class="dev-img-wrap">
+                <div class="dev-img-placeholder">👤</div>
+                <div class="dev-hover-overlay">
+                  <h4>Carlos Martínez</h4>
+                  <span class="dev-role">Lead Developer & Game Designer</span>
+                  <p>Arquitecto principal del juego. Diseñó el motor de combate, el sistema de combo y la lógica de los personajes. Fan empedernido de Street Fighter y KOF.</p>
+                </div>
+              </div>
+              <div class="dev-info">
+                <h4>Carlos Martínez</h4>
+                <span>Lead Dev / Game Design</span>
+              </div>
+            </div>
+
+            <div class="dev-card">
+              <div class="dev-img-wrap">
+                <div class="dev-img-placeholder">👤</div>
+                <div class="dev-hover-overlay">
+                  <h4>María López</h4>
+                  <span class="dev-role">Art Director & Sprite Artist</span>
+                  <p>Creadora de todos los personajes y escenarios del juego. Cada píxel fue dibujado a mano con amor salvadoreño y referencias de nuestra cultura urbana.</p>
+                </div>
+              </div>
+              <div class="dev-info">
+                <h4>María López</h4>
+                <span>Art Director</span>
+              </div>
+            </div>
+
+            <div class="dev-card">
+              <div class="dev-img-wrap">
+                <div class="dev-img-placeholder">👤</div>
+                <div class="dev-hover-overlay">
+                  <h4>Roberto Flores</h4>
+                  <span class="dev-role">Sound Designer & Composer</span>
+                  <p>Responsable de todos los efectos de sonido y la banda sonora del juego. Fusionó ritmos de cumbia, reggaeton y música electrónica para un soundtrack único.</p>
+                </div>
+              </div>
+              <div class="dev-info">
+                <h4>Roberto Flores</h4>
+                <span>Sound Designer</span>
+              </div>
+            </div>
+
+            <div class="dev-card">
+              <div class="dev-img-wrap">
+                <div class="dev-img-placeholder">👤</div>
+                <div class="dev-hover-overlay">
+                  <h4>Ana Recinos</h4>
+                  <span class="dev-role">UI/UX & Web Developer</span>
+                  <p>Diseñó toda la interfaz del juego y el sitio web. Se encargó de que la experiencia del usuario fuera fluida, intuitiva y con la identidad visual de Acera Fighter.</p>
+                </div>
+              </div>
+              <div class="dev-info">
+                <h4>Ana Recinos</h4>
+                <span>UI/UX Developer</span>
+              </div>
+            </div>
+
+            <div class="dev-card">
+              <div class="dev-img-wrap">
+                <div class="dev-img-placeholder">👤</div>
+                <div class="dev-hover-overlay">
+                  <h4>Diego Hernández</h4>
+                  <span class="dev-role">Programmer & QA Tester</span>
+                  <p>El depurador del equipo. Escribió el código de física, colisiones e IA de los personajes. También lideró las pruebas de calidad antes de cada lanzamiento.</p>
+                </div>
+              </div>
+              <div class="dev-info">
+                <h4>Diego Hernández</h4>
+                <span>Programmer / QA</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn">›</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SCREENSHOTS ══════════════════ -->
+  <section class="screenshots" id="screenshots">
+    <div class="section-header">
+      <div class="section-tag">— CAPTURAS —</div>
+      <h2 class="section-title">El Juego en <span class="accent">Acción</span></h2>
+    </div>
+    <div class="screenshots-grid">
+      <div class="ss-card ss-large"><div class="ss-placeholder">🎮 CAPTURA PRINCIPAL – COMBATE</div><div class="ss-label">Modo Historia – San Salvador Downtown</div></div>
+      <div class="ss-card"><div class="ss-placeholder">⚡ CAPTURA 2</div><div class="ss-label">Sistema de Combos</div></div>
+      <div class="ss-card"><div class="ss-placeholder">🔥 CAPTURA 3</div><div class="ss-label">Selección de Personaje</div></div>
+      <div class="ss-card"><div class="ss-placeholder">🌆 CAPTURA 4</div><div class="ss-label">Escenario Mercado Central</div></div>
+      <div class="ss-card"><div class="ss-placeholder">💥 CAPTURA 5</div><div class="ss-label">Modo Torneo</div></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ TRAILER ══════════════════ -->
+  <section class="trailer-section" id="trailer">
+    <div class="trailer-bg"></div>
+    <div class="trailer-content">
+      <div class="section-tag">— TRAILER OFICIAL —</div>
+      <h2 class="section-title">Mira el <span class="accent">Trailer</span></h2>
+      <p class="trailer-desc">Descubre la intensidad de Acera Fighter en acción. Combates épicos, personajes únicos y escenarios inspirados en El Salvador.</p>
+      <div class="video-container">
+        <div class="video-placeholder">
+          <div class="play-btn-big">▶</div>
+          <p>TRAILER ACERA FIGHTER – v1.0</p>
+          <span>Reemplaza este div con tu iframe de YouTube</span>
+        </div>
+        <!-- REEMPLAZAR CON:
+        <iframe width="100%" height="100%"
+          src="https://www.youtube.com/embed/TU_VIDEO_ID"
+          frameborder="0" allowfullscreen></iframe>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ DOWNLOAD ══════════════════ -->
+  <section class="download" id="download">
+    <div class="section-header">
+      <div class="section-tag">— ZONA DE DESCARGA —</div>
+      <h2 class="section-title">¡Descárgalo <span class="accent">Gratis!</span></h2>
+    </div>
+
+    <div class="download-grid">
+      <!-- Platforms -->
+      <div class="platform-cards">
+        <div class="platform-card active">
+          <div class="platform-icon">🖥️</div>
+          <h4>Windows</h4>
+          <p>10 / 11 · 64-bit</p>
+          <a href="#" class="btn btn-primary btn-small">Descargar .exe</a>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">🐧</div>
+          <h4>Linux</h4>
+          <p>Ubuntu 20.04+</p>
+          <a href="#" class="btn btn-outline btn-small">Descargar .AppImage</a>
+        </div>
+        <div class="platform-card coming-soon">
+          <div class="platform-icon">🍎</div>
+          <h4>macOS</h4>
+          <p>Próximamente</p>
+          <span class="badge-soon">SOON</span>
+        </div>
+      </div>
+
+      <!-- Requirements -->
+      <div class="requirements">
+        <h3>Requisitos del Sistema</h3>
+        <div class="req-table">
+          <div class="req-header">
+            <span></span>
+            <span>MÍNIMO</span>
+            <span>RECOMENDADO</span>
+          </div>
+          <div class="req-row">
+            <span class="req-label">SO</span>
+            <span>Windows 10 64-bit</span>
+            <span>Windows 11 64-bit</span>
+          </div>
+          <div class="req-row">
+            <span class="req-label">CPU</span>
+            <span>Intel i3 / Ryzen 3</span>
+            <span>Intel i5 / Ryzen 5</span>
+          </div>
+          <div class="req-row">
+            <span class="req-label">RAM</span>
+            <span>4 GB</span>
+            <span>8 GB</span>
+          </div>
+          <div class="req-row">
+            <span class="req-label">GPU</span>
+            <span>Intel HD 4000</span>
+            <span>GTX 1050 / RX 560</span>
+          </div>
+          <div class="req-row">
+            <span class="req-label">Disco</span>
+            <span>2 GB libres</span>
+            <span>4 GB libres</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Install Guide -->
+      <div class="install-guide">
+        <h3>¿Cómo Instalar?</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-info">
+              <h5>Descarga el instalador</h5>
+              <p>Haz clic en el botón de descarga según tu sistema operativo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-info">
+              <h5>Ejecuta el archivo</h5>
+              <p>Abre el .exe descargado. Si Windows pregunta, permite la ejecución.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-info">
+              <h5>Sigue el asistente</h5>
+              <p>El instalador te guiará paso a paso. Elige la carpeta de destino.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-info">
+              <h5>¡A jugar!</h5>
+              <p>Busca el acceso directo en tu escritorio y ¡comienza a pelear!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ REVIEWS ══════════════════ -->
+  <section class="reviews" id="reviews">
+    <div class="section-header">
+      <div class="section-tag">— COMUNIDAD —</div>
+      <h2 class="section-title">Valoraciones y <span class="accent">Comentarios</span></h2>
+    </div>
+
+    <div class="reviews-layout">
+      <!-- Rating Summary -->
+      <div class="rating-summary">
+        <div class="rating-big">4.7</div>
+        <div class="stars-display" id="avgStars">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star half">★</span>
+        </div>
+        <p class="rating-count">Basado en <strong>247</strong> reseñas</p>
+        <div class="rating-bars">
+          <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div><span>72%</span></div>
+          <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:18%"></div></div><span>18%</span></div>
+          <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><span>6%</span></div>
+          <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:3%"></div></div><span>3%</span></div>
+          <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+        </div>
+      </div>
+
+      <!-- Comments -->
+      <div class="comments-section">
+        <div class="comment-card">
+          <div class="comment-header">
+            <div class="avatar">JR</div>
+            <div class="comment-meta">
+              <strong>Juan Ramírez</strong>
+              <div class="comment-stars">★★★★★</div>
+            </div>
+            <span class="comment-date">Hace 2 días</span>
+          </div>
+          <p>¡Brutal! Nunca pensé que un juego salvadoreño llegaría a este nivel. Los personajes son increíbles y los escenarios me recuerdan al centro histórico. ¡Apoyen a estos majes!</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header">
+            <div class="avatar">KL</div>
+            <div class="comment-meta">
+              <strong>Karla Luna</strong>
+              <div class="comment-stars">★★★★☆</div>
+            </div>
+            <span class="comment-date">Hace 1 semana</span>
+          </div>
+          <p>El juego está muy bien hecho para ser indie. Me encantaron los combos y la música. Solo quisiera ver más personajes femeninos. ¡Sigan así!</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header">
+            <div class="avatar">MG</div>
+            <div class="comment-meta">
+              <strong>Marcos González</strong>
+              <div class="comment-stars">★★★★★</div>
+            </div>
+            <span class="comment-date">Hace 2 semanas</span>
+          </div>
+          <p>Juego la beta desde hace meses y el progreso es impresionante. El sistema de combate está muy pulido. ¡Orgullo centroamericano!</p>
+        </div>
+      </div>
+
+      <!-- Leave Review -->
+      <div class="leave-review">
+        <h3>Deja tu <span class="accent">Reseña</span></h3>
+        <div class="star-selector">
+          <p>Tu calificación:</p>
+          <div class="stars-input" id="starsInput">
+            <span class="star-inp" data-val="1">★</span>
+            <span class="star-inp" data-val="2">★</span>
+            <span class="star-inp" data-val="3">★</span>
+            <span class="star-inp" data-val="4">★</span>
+            <span class="star-inp" data-val="5">★</span>
+          </div>
+          <span class="rating-label" id="ratingLabel">Haz clic para calificar</span>
+        </div>
+        <input type="text" class="review-input" placeholder="Tu nombre" id="reviewName" />
+        <textarea class="review-textarea" placeholder="Escribe tu comentario sobre Acera Fighter..." id="reviewText" rows="4"></textarea>
+        <button class="btn btn-primary" id="submitReview">PUBLICAR RESEÑA</button>
+        <div class="review-success" id="reviewSuccess">¡Gracias por tu reseña! 🎉</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <div class="section-tag">— CONTÁCTANOS —</div>
+      <h2 class="section-title">Hablemos <span class="accent">Campeón</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:hola@acerafighter.sv">hola@acerafighter.sv</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong>WhatsApp / Teléfono</strong>
+            <a href="tel:+50300000000">+503 0000-0000</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Ubicación</strong>
+            <span>San Salvador, El Salvador 🇸🇻</span>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-btn">Discord</a>
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">TikTok</a>
+          <a href="#" class="social-btn">YouTube</a>
+          <a href="#" class="social-btn">X / Twitter</a>
+        </div>
+        <div class="contact-hours">
+          <p>🕐 Respondemos de <strong>Lun–Vie, 8am–6pm</strong> (hora SV)</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h3>Envíanos un Mensaje</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Asunto</label>
+          <select>
+            <option>Reporte de bug</option>
+            <option>Sugerencia</option>
+            <option>Colaboración</option>
+            <option>Prensa / Media</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea placeholder="Cuéntanos todo..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">ENVIAR MENSAJE →</button>
+        <div class="form-success" id="formSuccess">¡Mensaje enviado! Te responderemos pronto. ✅</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════ DONATE ══════════════════ -->
+  <section class="donate" id="donate">
+    <div class="donate-inner">
+      <div class="donate-text">
+        <div class="section-tag">— APOYA EL PROYECTO —</div>
+        <h2 class="section-title">Apóyanos con un <span class="accent">Donativo</span> ♥</h2>
+        <p>Acera Fighter es un proyecto indie 100% salvadoreño desarrollado con pasión y sin financiamiento externo. Tu donación nos ayuda a seguir mejorando el juego, agregar nuevos personajes, escenarios y mantener los servidores activos.</p>
+        <ul class="donate-benefits">
+          <li>💎 Nuevos personajes y escenarios</li>
+          <li>🎵 Más música y efectos de sonido</li>
+          <li>🌐 Modo multijugador en línea</li>
+          <li>🏆 Torneos comunitarios</li>
+          <li>📱 Versión móvil</li>
+        </ul>
+      </div>
+
+      <div class="donate-options">
+        <h3>Elige tu aporte</h3>
+        <div class="donate-amounts">
+          <button class="amount-btn" data-amount="1">$1 ☕</button>
+          <button class="amount-btn active" data-amount="5">$5 🥊</button>
+          <button class="amount-btn" data-amount="10">$10 ⚡</button>
+          <button class="amount-btn" data-amount="25">$25 🏆</button>
+          <button class="amount-btn custom" data-amount="custom">Otro</button>
+        </div>
+        <input type="number" class="custom-amount" id="customAmount" placeholder="Monto personalizado $" style="display:none" />
+        <div class="donate-methods">
+          <a href="#" class="donate-btn paypal">
+            <span>💳</span> PayPal
+          </a>
+          <a href="#" class="donate-btn patreon">
+            <span>🎨</span> Patreon
+          </a>
+          <a href="#" class="donate-btn kofi">
+            <span>☕</span> Ko-fi
+          </a>
+        </div>
+        <p class="donate-note">Cada donación, por pequeña que sea, hace una diferencia enorme. ¡Gracias por creer en nosotros! 🇸🇻</p>
+      </div>
+    </div>
+
+    <!-- Donors Wall -->
+    <div class="donors-wall">
+      <h4>Nuestros Héroes <span class="accent">Donadores</span> ♥</h4>
+      <div class="donor-tags">
+        <span class="donor-tag">🏆 Miguel A.</span>
+        <span class="donor-tag">⚡ Sofía R.</span>
+        <span class="donor-tag">🥊 Pedro M.</span>
+        <span class="donor-tag">🎮 Lucia V.</span>
+        <span class="donor-tag">🔥 Carlos E.</span>
+        <span class="donor-tag">💎 Anonymous</span>
+        <span class="donor-tag">⭐ Rodrigo T.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-main" style="font-size:2rem">ACERA<span class="logo-accent">FIGHTER</span></div>
+        <p>El juego de pelea salvadoreño.<br>Hecho con orgullo en El Salvador 🇸🇻</p>
+      </div>
+      <div class="footer-links-group">
+        <h5>Navegación</h5>
+        <a href="#home">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#download">Descargar</a>
+        <a href="#reviews">Reseñas</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>Síguenos</h5>
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>Legal</h5>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos de Uso</a>
+        <a href="#">Créditos</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Acera Fighter. Todos los derechos reservados.</p>
+      <p>Desarrollado con ❤️ en San Salvador, El Salvador</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
